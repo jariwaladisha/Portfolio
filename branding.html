@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Disha - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom Lightbox Styles */
+			.lightbox-overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: none;
+				justify-content: center;
+				align-items: center;
+				z-index: 10000;
+				cursor: pointer;
+			}
+			.lightbox-overlay img {
+				max-width: 90%;
+				max-height: 80%;
+				box-shadow: 0 0 20px rgba(0,0,0,0.5);
+				border: 2px solid #fff;
+				border-radius: 4px;
+			}
+			.gallery-link {
+				cursor: zoom-in;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+				<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Disha</strong> <span>Jariwala</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">PORTFOLIO</a></li>
+						</ul>
+					</nav>
+
+				<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Branding</h1>
+							</header>
+						</div>
+					</section>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="images/f2.jpg" class="image gallery-link">
+										<img src="images/f2.jpg" alt="Sanyojan Luxury Jewelry Campaign" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Sanyojan Luxury Jewelry Campaign</h3>
+											</header>
+											<p>The Vibe: Elegance meets heritage. 
+												The Work: I designed this campaign for C. Mansukhlal Jewellers using a royal plum and gold palette to elevate the "Sanyojan" collection. I focused on high-contrast lighting and sophisticated typography to give the brand a premium, "must-visit" feel for their in-store event.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/f3.jpg" class="image gallery-link">
+										<img src="images/f3.jpg" alt="Maa Bhuvaneshwari "Methi Khakhra" Packaging" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Maa Bhuvaneshwari "Methi Khakhra" Packaging</h3>
+											</header>
+											<p>The Vibe: Fresh, honest, and retail-ready. 
+												The Work: For this Khakhra packaging, I balanced traditional snack appeal with modern minimalism. By using clean white space and warm accents, I ensured the nutritional info and "Handmade" USP were the stars, making the product pop on a crowded shelf.</p>
+										
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/f4.jpg" class="image gallery-link">
+										<img src="images/f4.jpg" alt="ApnaTurf "Reserve. Play. Dominate. Digital Flyer" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>ApnaTurf "Reserve. Play. Dominate. Digital Flyer</h3>
+											</header>
+											<p>The Vibe: High-energy and action-oriented. 
+												The Work: I created this dynamic flyer to drive instant bookings. Using a bold "turf green" aesthetic and a curved action mask, I built a visual flow that leads the eye directly from the athlete to the QR code, turning viewers into players.</p>
+										
+										</div>
+									</div>
+								</section>
+							</section>
+
+							<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/disha.jariwala.14" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/disha__jariwala/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/dishajariwala8980/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; DISHA </li><li> Made with &#9829; </li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<div id="lightbox" class="lightbox-overlay">
+			<img src="" alt="Full size preview">
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				const lightbox = document.getElementById('lightbox');
+				const lightboxImg = lightbox.querySelector('img');
+
+				document.querySelectorAll('.gallery-link').forEach(link => {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						lightboxImg.src = this.href;
+						lightbox.style.display = 'flex';
+					});
+				});
+
+				lightbox.addEventListener('click', () => {
+					lightbox.style.display = 'none';
+				});
+			</script>
+
+	</body>
+</html>

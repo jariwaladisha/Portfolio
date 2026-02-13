@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Disha - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom Lightbox Styles */
+			.lightbox-overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: none;
+				justify-content: center;
+				align-items: center;
+				z-index: 10000;
+				cursor: pointer;
+			}
+			.lightbox-overlay img {
+				max-width: 90%;
+				max-height: 80%;
+				box-shadow: 0 0 20px rgba(0,0,0,0.5);
+				border: 2px solid #fff;
+				border-radius: 4px;
+			}
+			.gallery-link {
+				cursor: zoom-in;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+				<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Disha</strong> <span>Jariwala</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">PORTFOLIO</a></li>
+						</ul>
+					</nav>
+
+				<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Logo Designs</h1>
+							</header>
+						</div>
+					</section>
+
+				<div id="main">
+							
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="images/pic08.jpg" class="image gallery-link">
+										<img src="images/pic08.jpg" alt="Orange Yarns" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Orange Yarns</h3>
+											</header>
+											<p>For Orange Yarns, I developed a visual identity that balances organic textures with modern typography. The logo represents the interconnectedness of craft and quality, using a vibrant palette to evoke warmth and creativity within the textile industry.</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="rara-eyewear.html" class="image">
+										<img src="images/logo21.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Rara Eyewear</h3>
+											</header>
+											<p>A sophisticated branding project for a premium eyewear line. This project explores the intersection of fashion and utility, featuring a sleek, minimalist logo designed to look as good on a digital storefront as it does etched into a pair of high-end frames.</p>
+											<ul class="actions">
+												<li><a href="rara-eyewear.html" class="button">View Project</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="om-training.html" class="image">
+										<img src="images/logo31.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Om Training Center</h3>
+											</header>
+											<p>Designed for an NGO dedicated to community empowerment, the Om Training Center logo uses soft, inclusive shapes to represent growth and support. The identity focuses on accessibility and the human element of social work.</p>
+											<ul class="actions">
+												<li><a href="om-training.html" class="button">View Project</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+					
+					</div>
+
+				<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/disha.jariwala.14" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/disha__jariwala/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/dishajariwala8980/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; DISHA </li><li> Made with &#9829; </li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<div id="lightbox" class="lightbox-overlay">
+			<img src="" alt="Full size preview">
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				const lightbox = document.getElementById('lightbox');
+				const lightboxImg = lightbox.querySelector('img');
+
+				document.querySelectorAll('.gallery-link').forEach(link => {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						lightboxImg.src = this.href;
+						lightbox.style.display = 'flex';
+					});
+				});
+
+				lightbox.addEventListener('click', () => {
+					lightbox.style.display = 'none';
+				});
+			</script>
+
+	</body>
+</html>
